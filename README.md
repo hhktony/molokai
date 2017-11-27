@@ -12,15 +12,26 @@ By default, it has a dark gray background based on the version created by Hamish
 
 ## Installation
 
-Copy the file on your .vim/colors folder.
+molokai follows the standard runtime path structure. Below are some helper lines
+for popular package managers:
+
+* [Pathogen](https://github.com/tpope/vim-pathogen)
+  * `git clone https://github.com/hhktony/molokai.git ~/.vim/bundle/molokai`
+* [vim-plug](https://github.com/junegunn/vim-plug)
+  * `Plug 'hhktony/molokai'`
 
 If you prefer the scheme to match the original monokai background color, put this in your .vimrc file: 
-```
+```vim
 let g:molokai_original = 1
 ```
 
 There is also an alternative scheme under development for color terminals which attempts to bring the 256 color version as close as possible to the the default (dark) GUI version. To access, add this to your .vimrc:
-```
+```vim
 let g:rehash256 = 1
 ```
 
+Transparent mode
+
+```vim
+let g:molokai_transparent = 1
+```
